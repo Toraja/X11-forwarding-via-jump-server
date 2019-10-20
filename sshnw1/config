@@ -1,0 +1,12 @@
+Host jump
+  User jumper
+
+Host dest
+  User sshee
+  ProxyJump jump
+  IdentityFile ~/.ssh/id_rsa_dest
+  ForwardX11 yes
+
+Host *
+  # to avoid prompt to save fingerprint
+  StrictHostKeyChecking no
